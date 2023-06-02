@@ -14,7 +14,6 @@ svg {
 a:link,
 a:visited {
   text-decoration: none;
-  color: #e3e3e3;
 }
 
 body {
@@ -53,6 +52,7 @@ nav {
   padding: 0.75em 2em;
   border-radius: 15px;
   transition: background, color, 0.5s ease;
+  color: #e3e3e3;
 }
 
 .main__navigation-list--item:hover {
@@ -121,4 +121,11 @@ figcaption {
 .about-paragraph {
   max-width: 70ch;
   font-size: 0.9375rem;
+}
+
+.about-members {
+  color: #0b0b0b;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3rem;
 }
