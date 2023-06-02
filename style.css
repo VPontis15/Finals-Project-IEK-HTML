@@ -31,6 +31,10 @@ body {
   margin-bottom: 5rem;
 }
 
+ul li {
+  list-style: none;
+}
+
 nav {
   background-color: black;
 
@@ -123,9 +127,72 @@ figcaption {
   font-size: 0.9375rem;
 }
 
-.about-members {
+.about-members-heading {
   color: #0b0b0b;
   text-decoration: underline;
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.about-members-heading:hover {
+  transform: scale(1.1);
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.member {
+  box-shadow: 0 1px 15px #0b0b0b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.member__details {
+  display: flex;
+  flex-direction: column;
+  padding-block: 2.25em;
+  padding-inline: 1.5em;
+  gap: 1.125rem;
+  align-items: space-between;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-image img {
+  height: 250px;
+  max-width: 100%;
+}
+
+.member-past img {
+}
+
+.member-image {
+  position: relative;
+}
+
+.member-past .member-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #e3e3e3;
+  opacity: 0.5;
+  z-index: 100;
 }
