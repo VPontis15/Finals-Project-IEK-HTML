@@ -20,11 +20,16 @@ a:visited {
 body {
   font-family: "Roboto", sans-serif;
   color: #0b0b0b;
+  line-height: 1.6;
 }
 
 .container {
   max-width: calc(100% - 10rem);
   margin-inline: auto;
+}
+
+.container > * + * {
+  margin-bottom: 5rem;
 }
 
 nav {
@@ -89,4 +94,31 @@ nav {
 .hero__text-subheading {
   letter-spacing: 5px;
   font-size: 1.125rem;
+}
+
+.about {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.about-heading {
+  font-size: 3rem;
+  text-align-last: center;
+  margin-bottom: 5rem;
+}
+
+figcaption {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.about__paragraphs > * {
+  margin-bottom: 1em;
+}
+
+.about-paragraph {
+  max-width: 70ch;
+  font-size: 0.9375rem;
 }
