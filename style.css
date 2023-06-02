@@ -14,11 +14,12 @@ svg {
 a:link,
 a:visited {
   text-decoration: none;
-  color: #fff;
+  color: #e3e3e3;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #0b0b0b;
 }
 
 .container {
@@ -27,28 +28,65 @@ body {
 }
 
 nav {
-  background-color: #0b0b0b;
-  color: #fff;
+  background-color: black;
+
+  color: #e3e3e3;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
 }
 
 .main__navigation-list {
-  max-width: 75%;
+  max-width: 80%;
   display: flex;
-  list-style: none;
-  padding: 1.5em;
   justify-content: space-between;
-  align-items: center;
-  margin-inline: auto;
+  list-style: none;
 }
 
 .main__navigation-list--item {
-  border: 1px solid #fff;
+  border: 1px solid #e3e3e3;
   padding: 0.75em 2em;
   border-radius: 15px;
   transition: background, color, 0.5s ease;
 }
 
 .main__navigation-list--item:hover {
-  background-color: #fff;
+  background-color: #ffff02;
   color: #0b0b0b;
+  font-weight: 700;
+}
+
+.nav-logo {
+  height: 100px;
+  padding: 0.5em;
+}
+
+.hero {
+  background-image: url(images/metallica-band.jpeg);
+  min-height: 100vh;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 5rem;
+}
+
+.hero-logo {
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: right right;
+}
+
+.hero__text {
+  padding: 5em;
+}
+
+.hero__text-heading {
+  letter-spacing: 8px;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.hero__text-subheading {
+  letter-spacing: 5px;
+  font-size: 1.125rem;
 }
