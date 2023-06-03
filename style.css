@@ -14,6 +14,7 @@ svg {
 a:link,
 a:visited {
   text-decoration: none;
+  color: #e3e3e3;
 }
 
 body {
@@ -150,6 +151,11 @@ figcaption {
   box-shadow: 0 1px 15px #0b0b0b;
   border-radius: 10px;
   overflow: hidden;
+  transition: transform, 0.25s ease-in-out;
+}
+
+.active:hover {
+  transform: scale(1.1);
 }
 
 .member__details {
@@ -178,10 +184,6 @@ figcaption {
 
 .member-image img {
   height: 250px;
-  max-width: 100%;
-}
-
-.member-past img {
 }
 
 .member-image {
@@ -195,4 +197,48 @@ figcaption {
   background-color: #e3e3e3;
   opacity: 0.5;
   z-index: 100;
+}
+
+.cds {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-position: inside;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cds a {
+  color: #0b0b0b;
+}
+
+.cd img {
+  height: 250px;
+}
+
+.cd {
+  font-size: 1.125rem;
+  transition: transform, 0.25s ease-in-out;
+}
+
+.cd:hover {
+  transform: scale(1.2);
+}
+
+.cd img {
+  box-shadow: 0 1px 15px #0b0b0b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.cd__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 15px #0b0b0b;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  padding: 0.5em;
 }
