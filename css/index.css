@@ -126,6 +126,10 @@ figcaption {
   font-size: 0.9375rem;
 }
 
+.about__paragraphs-heading {
+  font-size: 1.25rem;
+}
+
 .about-members-heading {
   color: #0b0b0b;
   text-decoration: underline;
