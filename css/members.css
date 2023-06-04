@@ -78,7 +78,6 @@ nav {
 
 .members {
   display: grid;
-  gap: 2.5rem;
 }
 
 .member {
@@ -93,6 +92,8 @@ nav {
 .member__details-name {
   font-size: 2.5rem;
   margin-bottom: 0.5em;
+  font-family: "Playfair", serif;
+  font-weight: 600;
 }
 
 .image-container {
@@ -131,4 +132,8 @@ nav {
 
 .source:hover {
   transform: translateY(-10px);
+}
+
+.source:active {
+  transform: translateY(5px);
 }
