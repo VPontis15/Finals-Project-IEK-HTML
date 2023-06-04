@@ -68,3 +68,9 @@ nav {
   height: 100px;
   padding: 0.5em;
 }
+
+.main-heading {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+}
