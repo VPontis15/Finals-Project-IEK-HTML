@@ -78,23 +78,28 @@ nav {
   font-size: 3rem;
   text-align: center;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .col {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .cd {
   box-shadow: 0 1px 15px #0b0b0b;
-  max-width: min(100%, 400px);
+  max-width: 100%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .cd__content {
   padding-inline: 2em;
   padding-block: 1.25em;
+  display: grid;
 }
 
 .cd__content-name {
@@ -102,17 +107,21 @@ nav {
   font-size: 1.75rem;
   font-family: "Cinzel Decorative", cursive;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+
+  font-size: 2rem;
 }
 
 .cd__content-tracks {
   display: flex;
 
-  gap: 1rem;
+  justify-content: space-around;
   max-width: 100%;
 }
 
-.cd__content-tracks--track {
+.cd__content-tracks--track-name {
+  font-family: "Playfair", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .cd__image-container {
@@ -122,5 +131,4 @@ nav {
 
 .cd__image-container img {
   height: 100%;
-  border-radius: 10px;
 }
