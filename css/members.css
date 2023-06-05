@@ -103,10 +103,10 @@ nav {
   background-color: #eeddaa;
 
   z-index: -1;
-  clip-path: polygon(0 0, 100% 0, 100% 32%, 0 86%);
+  clip-path: polygon(0 0, 100% 0, 100% 32%, 0 92%);
 }
 .reverse:before {
-  clip-path: polygon(0 0, 100% 0, 100% 79%, 0 27%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 27%);
 }
 
 .member__details-name {
@@ -124,7 +124,6 @@ nav {
 .reverse .member-image {
   margin-right: auto;
   margin-left: 0;
-  /* max-width: 850px; */
 }
 
 .member-image {
@@ -168,4 +167,8 @@ nav {
   background-color: #e3e3e3;
   box-shadow: inset 0 15px 10px -20px #0b0b0b;
   margin-bottom: 3rem;
+}
+
+.video {
+  margin-top: 2rem;
 }
