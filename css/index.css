@@ -75,6 +75,7 @@ nav {
   max-width: 100%;
   display: block;
   margin-bottom: 5rem;
+  background-repeat: no-repeat;
 }
 
 .hero-logo {
@@ -101,7 +102,7 @@ nav {
 
 .about {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   justify-content: space-between;
   margin-bottom: 5rem;
 }
@@ -194,6 +195,10 @@ figcaption {
 
 .member-image {
   position: relative;
+}
+
+.member__details-name {
+  font-family: "Playfair", serif;
 }
 
 .member-past .member-image::after {
