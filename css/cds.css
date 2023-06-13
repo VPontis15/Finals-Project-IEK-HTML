@@ -141,4 +141,5 @@ nav {
 .cd__image-container img {
   max-height: 100%;
   max-width: 100%;
+  min-width: 300px;
 }
